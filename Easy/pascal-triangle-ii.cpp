@@ -1,7 +1,7 @@
 //https://leetcode.com/problems/pascals-triangle-ii/submissions/
 
-// O(n^2) time 
-// O(n)	space
+// O(n^2) time complexity
+// O(n)	space complexity
 vector<int> getRow(int rowIndex) {
         vector<vector<int>> k;
         vector<int> k0(1,1);
