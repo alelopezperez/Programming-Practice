@@ -1,5 +1,5 @@
 //https://leetcode.com/problems/implement-queue-using-stacks/submissions/
-// Time Complexity O(N); Is linear since i need push and pop the content of my main stack to my aux stack
+// Time Complexity O(2N); Is linear since i need push and pop the content of my main stack to my aux stack; and vice versa
 // Space Complexity O(2N); since i use two stack to create the queue main stack and my aux stack. 
 //Time to completion 8min
 class MyQueue {
