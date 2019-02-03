@@ -1,5 +1,6 @@
+//https://leetcode.com/problems/min-stack/
 // I can use extra stack it does not matter; but also i need to stop looking at the looking quickly at the correct answers and believe in myself;
-//Time Complexity O(N);
+//Time Complexity O(1);
 //Space Comlexity O(2*N) Since I use a main stack and one aux stack.
 //Time to completion 18min
 // THIS USES DOUBLE THE REQUIERED MEMORY ILL MAKE A BETTER IMPLEMENTATIO.
