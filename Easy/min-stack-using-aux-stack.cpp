@@ -2,6 +2,7 @@
 //Time Complexity O(N);
 //Space Comlexity O(2*N) Since I use a main stack and one aux stack.
 //Time to completion 18min
+// THIS USES DOUBLE THE REQUIERED MEMORY ILL MAKE A BETTER IMPLEMENTATIO.
 class MinStack {
 public:
     /** initialize your data structure here. */
