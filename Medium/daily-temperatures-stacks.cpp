@@ -2,7 +2,7 @@
 //Time Complexity O(n) I go throught the array only once
 //Space Complexity O(n) I use a stack that could be the size of the n elements of the array
 //I learned that you can store the pos of the array instead of the value of the array and use the value of it to get the desired result
-
+// Time to completion 75min
 vector<int> dailyTemperatures(vector<int>& T) {
 
         vector<int> ans (T.size());
