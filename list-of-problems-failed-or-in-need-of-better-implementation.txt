@@ -1,0 +1,8 @@
+Failed Problems:
+	https://leetcode.com/problems/score-of-parentheses/
+	https://leetcode.com/problems/linked-list-components/
+Problems that could be improved:
+	https://leetcode.com/problems/backspace-string-compare/
+
+
+
