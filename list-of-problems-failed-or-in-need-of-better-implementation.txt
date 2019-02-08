@@ -4,7 +4,7 @@ Failed Problems:
 Problems that could be improved:
 	https://leetcode.com/problems/backspace-string-compare/
 	https://leetcode.com/problems/binary-tree-inorder-traversal
-	https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal/
+	https://leetcode.com/problems/binary-tree-zigzag-level-order-traversal
 
 
 
