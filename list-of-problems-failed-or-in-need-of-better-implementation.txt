@@ -1,6 +1,7 @@
 Failed Problems:
 	https://leetcode.com/problems/score-of-parentheses/
 	https://leetcode.com/problems/linked-list-components/
+	https://leetcode.com/problems/task-scheduler
 
 
 Problems that could be improved:
