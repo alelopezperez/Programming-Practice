@@ -3,6 +3,7 @@
 //Space Complexity O(n) recursion stack
 //I learned that the return funciton is important when using recursion; i was not implementing correctly until i had to make sure of using something
 //else with the solution submissions
+//TIme to completion 20min
 int maxDepth(Node* root) {
         int maxn=0;
         if(root==NULL)
