@@ -2,6 +2,7 @@
 //Time Complexity O(N)
 //Space COMplecity O(N)
 //Time to completion A LOT more than 2 hours over two days
+// I need to start drawing more with trees
 void balancedBST(int min, int max, vector<int>* nums, TreeNode** root){
         if(min<=max){
             int mid = min+(max-min)/2;
