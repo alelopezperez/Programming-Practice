@@ -3,7 +3,8 @@
 //Space Complexity O(2N) since i use a queue and the recursive stack to get the depth level of the tree;
 //Time to completion 30min
 //Here I learned that sometimes you dont need one traverse to have an efecient algorithm.
-//I got to stop thinking so much of doing things in one tree traversal; 	
+//I got to stop thinking so much of doing things in one tree traversal; 
+//time to completion 15min	
 int depthLevel(TreeNode* root, int i =0){
         if(root==NULL)
             return i;
