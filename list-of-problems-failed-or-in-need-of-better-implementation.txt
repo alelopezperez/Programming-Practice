@@ -2,6 +2,7 @@ Failed Problems:
 	https://leetcode.com/problems/score-of-parentheses/
 	https://leetcode.com/problems/linked-list-components/
 	https://leetcode.com/problems/task-scheduler
+	https://leetcode.com/problems/diameter-of-binary-tree/
 
 
 Problems that could be improved:
@@ -13,6 +14,7 @@ Problems that could be improved:
 	https://leetcode.com/problems/trim-a-binary-search-tree/
 	https://leetcode.com/problems/convert-bst-to-greater-tree
 	https://leetcode.com/problems/binary-tree-tilt/
+
 
 
 

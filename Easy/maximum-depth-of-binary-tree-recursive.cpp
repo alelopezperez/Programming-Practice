@@ -24,3 +24,9 @@ int maxDepth(TreeNode* root) {
 
         return maxD;
 }
+
+int maxDepth(TreeNode* root, int i = 0) {
+        if(root==NULL)
+            return i;
+        return max(maxDepth(root->left, i+1), maxDepth(root->right, i+1));
+}
