@@ -1,7 +1,7 @@
 //https://leetcode.com/problems/find-largest-value-in-each-tree-row/submissions/
 // Time Complexity O(n) Since I traverese the whole tree
 // Space Complexity O(n) since the queue while grow as the largest row in the tree
-// The solution was to simply use a breadth search via a queue and just record the largest value in each iterations
+// The solution was to simply use a breadth search via a queue and just record the largest value in each iteration.
 
 vector<int> largestValues(TreeNode* root) {
 	queue<TreeNode*> q;
