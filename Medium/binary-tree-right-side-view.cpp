@@ -2,6 +2,7 @@
 // Time Complexity O(N) We traverse the whole tree
 // Space Complexity O(N) We save all the result of the child by each level
 // We just take the last (or first it depend in which order you push first; left to right o right to left)
+//Time To completion 30min
 vector<int> rightSideView(TreeNode* root) {
         if(root == NULL)
             return {};
