@@ -12,14 +12,15 @@ public:
 	
 		
 };
-void insert(Trie* root, string word){
-	for (char l : word){
-		if(root->alpha[l-'a']==NULL)
-			root->alpha[l-'a'] = new Trie();
-			root = root->alpha[l-'a'];
-	}
-	root->endOfWord = true;
-}
+void insert(Trie* root, string key){
+        for(char letter : key){
+            if(root->alpha[letter-'a']==NULL)
+                root->alpha[letter-'a'] = new Trie();         
+            root = root->alpha[letter-'a'];
+            
+        }
+        root->endOfWord = true;
+    }
 
 bool find(Trie* root, string word){
 	for (char l : word){
@@ -35,11 +36,11 @@ bool find(Trie* root, string word){
 
 int main (){
 	Trie* root = new Trie();
-	string palabra = "hola";
+	string palabra = "h";
 	insert(root, palabra);
 	insert(root, "hol");
 	string p2 = "za";
-	cout<<find(root, "hol")<<"\n";
+	cout<<find(root, "a")<<"\n";
 	return 0;
 }
 
@@ -47,7 +48,7 @@ int main (){
 
 
 
-["ogz","eyj","e","ey","hmn","v","hm","ogznkb","ogzn","hmnm","eyjuo","vuq","ogznk","og","eyjuoi","d"]
+
 
 
 
