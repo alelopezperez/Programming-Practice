@@ -46,8 +46,26 @@ int main(int argc, char* argv[]){
 	cout<<*(it)<<"\n";
 	cout<<*(prev(it))<<"\n";
 	
+	vector<int> p{1,2};
+	vector<int> p2{1,2};
 	
+	vector<int>* ref = &p;
 
-	
-	
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
