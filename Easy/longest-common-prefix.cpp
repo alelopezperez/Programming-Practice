@@ -7,8 +7,6 @@ string longestCommonPrefix(vector<string>& strs) {
         if(strs.size()==0)
             return "";
         
-        int i = 0;
-        int j = 0;
         string ans = "";
         char aux;
         
