@@ -5,6 +5,12 @@ public:
 	Vector(int s) : elem {new double[s]}, sz{s} {}
 	double& operator[](int i) { return elem[i];}
 	int size() { return sz; }
+	static void print(){
+		std::cout<<"HOLA"<<std::endl;	
+	}
+	void printnonstatic(){
+		std::cout<<"HOLA"<<std::endl;	
+	}
 private:
 	double* elem;
 	int sz;
@@ -26,5 +32,7 @@ int main(){
 	int* p = &a;
 	*p = 5;
 	std::cout<<*p;
+	Vector::print();
+	v.printnonstatic();
 	return 0;
 }
