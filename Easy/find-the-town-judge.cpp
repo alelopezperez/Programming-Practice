@@ -1,4 +1,6 @@
 //https://leetcode.com/problems/find-the-town-judge/
+// Time Complexity O(N)
+//Space Complexity O(N)
 int findJudge(int N, vector<vector<int>>& trust) {
         set<int> town;
         vector<int> score(N, 0);
