@@ -1,34 +1,23 @@
-#include <bits/stdc++.h>
-using namespace std;
+
+
 bool isHappy(int n) {
-	unordered_set<int> map;
-	int sum;
-	
-	while(sum != 1){
-		sum=0;
-		if(map.find(n)==map.end()){
-				cout<<"PONER "<<n<<"\n";
-				map.insert(n);
-			}
-		else{
-				return false;
-		}
-		while(n!=0){
-			
-			
-			sum = sum + (n%10)*(n%10);
-			n = n/10;
-			
-		}
-		cout<<sum<<"\n";
-		n = sum;
-	}
-	return true;
-}
-int main(){
-	
-	if(isHappy(7)){
-		cout<<"YES\n";
-	}
-	return 0;
+        unordered_set<int> uset;
+        int num;
+        int temp = n;
+        while(num!=1){
+            num = 0;
+            while(temp!=0){
+                num+= ((temp%10)*(temp%10));
+                temp = temp/10;
+            }
+            
+            if(uset.find(num)!=uset.end())
+                return false;
+            
+            uset.insert(num);
+            temp = num;          
+           
+        }
+        
+        return true;
 }

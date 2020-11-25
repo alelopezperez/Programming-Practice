@@ -70,7 +70,7 @@ vector<vector<string>> meetingPlannerGoogle(vector<vector<string>> slot1, vector
 					
 					start += duration;
 				}
-				ans.push_back({numberToTime(temp),numberToTime(start)});
+				ans.push_back({numberToTime(temp),numberToTime(end)});
 				
 			}
 						
@@ -89,7 +89,7 @@ vector<vector<string>> meetingPlannerGoogle(vector<vector<string>> slot1, vector
 				while(start+duration<=end){
 					start += duration;
 				}
-				ans.push_back({numberToTime(temp),numberToTime(start)});
+				ans.push_back({numberToTime(temp),numberToTime(end)});
 				
 			}
 						
