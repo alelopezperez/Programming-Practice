@@ -2,7 +2,7 @@ Failed Problems:
 	https://leetcode.com/problems/score-of-parentheses/
 	https://leetcode.com/problems/linked-list-components/
 	https://leetcode.com/problems/task-scheduler
-	https://leetcode.com/problems/diameter-of-binary-tree/
+	https://leetcode.com/problems/diameter-of-binary-tree/++++++++++++++++++++++++
 	https://leetcode.com/problems/binary-tree-tilt/
 	https://leetcode.com/problems/convert-bst-to-greater-tree
 	https://leetcode.com/problems/implement-magic-dictionary/submissions/
@@ -17,6 +17,7 @@ Problems that could be improved:
 	https://leetcode.com/problems/asteroid-collision/
 	https://leetcode.com/problems/increasing-order-search-tree
 	https://leetcode.com/problems/path-sum-ii/
+	https://leetcode.com/problems/kth-missing-positive-number/submissions/
 
 	
 
