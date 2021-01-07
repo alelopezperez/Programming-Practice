@@ -1,16 +1,6 @@
-//https://leetcode.com/problems/rotate-string/
-// Time COmplexity O(N^2);
-// Space COmplexity O(N); creatin new string;
+#include <bits/stdc++.h>
+using namespace std;
 
-//KMP
-// Time COmplexity O(N+M);
-// Space COmplexity O(M); creatin new string;
-
-bool rotateString(string A, string B) {
-        
-        return A.size()==B.size() && (A+A).find(B)!=-1;
-        
-}
 
 bool kmp (string& s, string& p){
 	vector<int> table(p.size(),0);
@@ -34,6 +24,12 @@ bool kmp (string& s, string& p){
 	}
 	
 	
+	for(auto elem : table){
+		cout<<elem<<" ";
+	}
+
+
+
 	int i = 0;
 	int j = 0;
 	while(i < s.size() && j < p.size()){
@@ -46,6 +42,8 @@ bool kmp (string& s, string& p){
 			
 		}
 		i++;
+		
+		
 	}
 
 	
@@ -53,9 +51,17 @@ bool kmp (string& s, string& p){
 	
 	
 }
-    bool rotateString(string A, string B) {
-        
-        string neo = A+A;
-        return A.size()==B.size() && kmp(neo,B);
-        
-    }
+int main(){
+
+	string s = "";
+	string p = "";
+	cin >> s;
+	cin >> p;
+	cout<<s<<endl<<p<<endl;
+	if(kmp(s, p))
+		cout<<"true";
+	else
+		cout<<"false";
+	cout<<endl;
+	return 0;
+}
