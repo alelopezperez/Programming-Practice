@@ -10,6 +10,7 @@ Failed Problems:
 	https://leetcode.com/problems/find-duplicate-subtrees/
 	https://leetcode.com/problems/trim-a-binary-search-tree/
 	https://leetcode.com/problems/implement-strstr/solution/
+	https://leetcode.com/problems/kth-missing-positive-number/submissions/
 
 Problems that could be improved:
 	https://leetcode.com/problems/backspace-string-compare/
