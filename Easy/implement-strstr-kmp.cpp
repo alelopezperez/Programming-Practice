@@ -51,8 +51,33 @@
 	
 	
 }
-    int strStr(string haystack, string needle) {
+int strStr(string haystack, string needle) {
         return kmp(haystack,needle);
      
+}
+
+
+// Time Complexity O(N+M) M to precompute the hashing for each 
+// Space Complexity O(1) constant space for one hash
+// I used the Rabin-Karp algorithm
+
+int rabin_karp (string& s, string& p){
+        unordered_set<string> uset;
+        
+        uset.insert(p);
+        for(int initial = 0; initial<s.size(); initial++){
+            string temp = s.substr(initial, p.size());
+            if(uset.find(temp)!=uset.end())
+                return initial;
+          
+        }
+        
+        return -1;
     }
-};
+int strStr(string haystack, string needle) {
+        
+        if(haystack == needle || needle.size() == 0 )
+                return 0;
+        return rabin_karp(haystack,needle);
+     
+    }

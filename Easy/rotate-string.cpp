@@ -53,9 +53,39 @@ bool kmp (string& s, string& p){
 	
 	
 }
-    bool rotateString(string A, string B) {
+bool rotateString(string A, string B) {
         
         string neo = A+A;
         return A.size()==B.size() && kmp(neo,B);
+        
+}
+
+
+//Rabin-Karp
+// Time COmplexity O(N+M);
+// Space COmplexity O(M); creatin new string;
+
+bool rabin_karp (string& s, string& p){
+        unordered_set<string> uset;
+        
+        uset.insert(p);
+        
+        if(uset.find(s)!=uset.end())
+                return true;
+        
+        for(int initial = 0; initial<s.size(); initial++){
+            string temp = s.substr(initial, p.size());
+            if(uset.find(temp)!=uset.end())
+                return true;
+          
+        }
+        
+        return false;
+    }
+bool rotateString(string A, string B) {
+        
+        string neo = A+A;
+    
+        return A.size()==B.size() && rabin_karp(neo,B);
         
     }
