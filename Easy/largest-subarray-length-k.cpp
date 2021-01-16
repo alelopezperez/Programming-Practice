@@ -10,13 +10,7 @@ vector<int> largestSubarray(vector<int>& nums, int k) {
                 pos = i;
             }
         }
+
         
-        vector<int> ans;
-        while(k>0){
-            ans.push_back(nums[pos]);
-            pos++;
-            k--;
-        }
-        
-        return ans;
+        return vector<int>(nums.begin()+pos, nums.begin()+pos+k);
 }
