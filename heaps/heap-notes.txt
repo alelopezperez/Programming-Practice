@@ -1,0 +1,13 @@
+Representing a Tree as an array
+
+	in a 1 indexed array
+		if a node is at i
+			left = i*2
+			right = i*2 +1
+			parent = i/2
+	
+	in a 0 indexed array
+		if a node is at i
+			left = i*2+1
+			right = i*2+1+1
+			parent = if i % 2==0 ? i/2-1 : i/2
