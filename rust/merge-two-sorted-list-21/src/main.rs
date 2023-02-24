@@ -45,4 +45,9 @@ impl Solution {
     }
 }
 
-fn main() {}
+fn main() {
+    let mut v = Vec::<Option<i32>>::new();
+    let mut r = Some(4);
+    v.push(r);
+    let v = r.as_mut().unwrap();
+}
