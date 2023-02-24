@@ -35,7 +35,8 @@ pub fn helper(left: &Option<Rc<RefCell<TreeNode>>>, right: &Option<Rc<RefCell<Tr
     }
 }
 pub fn is_symmetric(root: Option<Rc<RefCell<TreeNode>>>) -> bool {
-    let r = root.unwrap();
-    let ans = helper(&r.borrow().left, &r.borrow().right);
-    ans
+    helper(
+        &root.as_ref().unwrap().borrow().left,
+        &root.as_ref().unwrap().borrow().right,
+    )
 }
